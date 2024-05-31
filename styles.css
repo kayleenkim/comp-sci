@@ -1,0 +1,113 @@
+/* Reset some default browser styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333;
+}
+
+/* Header and navigation styling */
+header {
+    background: #e6e6fa; /* Light purple */
+    color: #333;
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 2px solid #4b0082; /* Dark purple */
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #4b0082; /* Dark purple */
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #dda0dd; /* Light purple */
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #4b0082; /* Dark purple */
+}
+
+main p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Image styling */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Footer styling */
+footer {
+    background: #e6e6fa; /* Light purple */
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #4b0082; /* Dark purple */
+}
+
+/* Add some spacing at the bottom to prevent the footer from covering the content */
+body {
+    padding-bottom: 3rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    main {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+}
